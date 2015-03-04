@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/check_page"
+	>
+	<LinearLayout
+	    android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="30dp"
+		android:background="@drawable/main_page"
+		
+	    >
+	<TextView
+	    android:id="@+id/whatever"
+		android:layout_width="fill_parent"
+		android:layout_height="30dp"
+		android:layout_weight="1"
+	    />
+	<Button
+	    android:id="@+id/editNote"
+		android:layout_width="80dp"		
+		android:layout_height="28dp"
+		android:layout_marginTop="1dp"
+		android:layout_weight="1"
+		
+		android:text="Edit"
+		android:background="@layout/button_style"
+	    />
+	</LinearLayout>	
+	<TextView
+		android:id="@+id/checkTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:paddingLeft="5dp"
+		android:paddingRight="5dp"
+		android:textSize="20sp"
+		android:textColor="#3c3f3c"		
+		android:text=""
+		/>
+	
+	<TextView
+		android:id="@+id/checkTime"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:gravity="right"
+		android:paddingRight="5dp"
+		android:textSize="12sp"
+		android:textColor="#3c3f3c"
+		android:text=""
+		/>
+	<ScrollView android:layout_width="fill_parent" android:layout_height="280dp"> 
+	<TextView
+		android:id="@+id/checkContent"
+		android:layout_width="fill_parent"
+		android:layout_height="280dp"
+		android:layout_marginTop="5dp"
+		android:lineSpacingExtra="4dp"
+		android:paddingLeft="5dp"
+		android:paddingRight="5dp"
+		android:gravity="left"
+		android:textSize="20sp"
+		android:textColor="#3c3f3c"
+		android:text=""
+		android:autoLink="all"
+		/>
+	</ScrollView> 
+	
+		<ListView
+            android:id="@+id/checkMediaList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollingCache="false"
+             >
+        </ListView>
+		
+	
+</LinearLayout>

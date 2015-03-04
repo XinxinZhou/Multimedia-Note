@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/check_page">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:gravity="center_vertical|bottom"
+        android:orientation="horizontal" >
+
+      
+
+        <Button
+            android:id="@+id/addImage"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="addImage"
+            android:textSize="9dp" 
+             android:background="@layout/line"
+             />
+
+        <Button
+            android:id="@+id/addAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="addAudio"
+            android:textSize="9dp" 
+             android:background="@layout/line"
+             />
+
+        <Button
+            android:id="@+id/addVedio"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="addVedio"
+            android:textSize="9dp" 
+             android:background="@layout/line"
+             />
+        
+          <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="return"
+            android:textSize="9dp" 
+            android:background="@layout/line"
+            />
+          
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" 
+        >
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="28dp"
+            android:layout_weight="1"
+            android:ems="14"
+            android:hint="title" 
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="2dp"
+            android:paddingLeft="5dp"
+            android:background="@layout/line"
+            />
+
+        <Button
+            android:id="@+id/saveNote"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:background="@layout/button_style"
+            android:text="Save" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <com.example.multimedianote.NoteEditView
+            android:id="@+id/editContent"
+            android:layout_width="fill_parent"
+            android:layout_height="191dp"
+            android:layout_weight="0.36"
+            
+            android:ems="10"
+            android:gravity="top"
+            android:height="350dp"
+            android:hint="input.."
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="23dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="false" 
+            android:background="@layout/editline"
+            />
+
+        <ListView
+            android:id="@+id/audioList"
+            android:layout_width="fill_parent"
+            android:layout_height="82dp"
+            android:layout_weight="0.12" 
+            android:scrollingCache="false"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>
